@@ -23,6 +23,36 @@ Repository for STEP Semester 3 Object-Oriented Programming (Java) coursework, st
 
 ## Daily Session Logs
 
+## Date: 07-10-2026
+
+**Today's Work:**
+- Completed and verified full assignment implementation for **Week 8: Object Class Methods, Inner Classes & UML Diagrams** (`STEP-SEM-3_Week_8_Category_B_ObjectMethods_InnerClasses_UML_Concept_Intro`) across `feature/session_4` and `feature/session_8`:
+  - **`class_problems` Refinements & Validations**:
+    - `ObjectMethodsDemo.java`: Aligned with Sections 1–3. `Device` abstract base class provides overridden `toString()`; `SmartLight` inherits `toString()`, overrides `equals(Object)` with safe `instanceof` check, and implements consistent `hashCode()`. Verified `==` vs `.equals()` and `HashSet` deduplication.
+    - `CloningDemo.java`: Aligned with Section 4. Implemented `ScheduleConfig` demonstrating `Cloneable`, shallow copy reference sharing leak (`[07:00, 22:00]`) vs genuine deep copy list isolation (`[07:00]`), along with composite `SmartDoorLock` deep cloning.
+    - `InnerClassesDemo.java`: Aligned with Section 5. Demonstrated Member Inner Class (`SmartThermostat.UsageLog` accessing enclosing instance state), Static Nested Class (`SmartThermostat.TemperatureReading`), Local Inner Class (`calibrate()` method with `CalibrationOffset`), and Anonymous Inner Class (`Schedulable weekendOnly`).
+    - `AnonymousInnerClassDemo.java`: Demonstrated standalone and parameter-passed anonymous inner classes implementing `Schedulable` and `DeviceAction`.
+    - `SmartHomeIntegrationDemo.java`: Executed the complete Section Wrap-Up ("The Whole Smart Home, Part 2 — In One Program" from Page 11) with byte-exact matching output.
+  - **`assigment_problems`**:
+    - `DeviceEqualityAudit.java`: Audited all 5 equality contract axioms (reflexive, symmetric, transitive, consistent, non-nullity) alongside hash bucketing in `HashSet` and `HashMap`.
+    - `DeepCopyDeviceProfile.java`: Multi-level deep cloning of device security profiles ensuring complete isolation.
+    - `SmartSensorLogManager.java`: Member inner class telemetry entries with outer instance binding and static nested data records.
+    - `AnonymousCallbackDemo.java`: Event dispatcher supporting specialized anonymous inner class listeners for security alerts, power logging, and emergency dispatch.
+    - `SmartHomeUMLModelDemo.java`: Directly modeled Section 6 UML Class inheritance, Object runtime snapshots, and Sequence diagram `connectAllToApp` flow.
+  - **Comprehensive Documentation & Solutions**:
+    - `UML_DIAGRAMS_AND_CONCEPTS.md`: Added complete Mermaid diagrams for UML Class Diagram, Object Diagram, and Sequence Diagram, including notation rules and diagram comparison matrix.
+    - `TEST_YOURSELF_SOLUTIONS.md`: Documented complete, technical answers to all 8 self-test questions from Page 13 of the concept guide.
+- Compiled all Java files with `javac 25` and verified zero compilation errors and exact console outputs.
+- Pushed updated feature branches `feature/session_4` and `feature/session_8` to GitHub.
+
+**Next Session Plan:**
+- Review all completed Semester 3 modules (Sessions 1-4 / Weeks 3, 4, 7, 8) in preparation for upcoming lab assessments and evaluations.
+
+**Issues Faced:**
+- None.
+
+---
+
 ## Date: 03-10-2026
 
 **Today's Work:**
